@@ -51,7 +51,35 @@ subject_id     activity             variable                       mean
 
 In the features.txt file, the file lists 561 variables with names such as "tBodyAcc-mean()-X" or "fBodyAcc-mean()-X." I replaced this terminology, t or f, with the words, "Time Domain Signal" for "t"and "Fast Fourier Transform" for "f" for better readability. I left the "X", "Y", and "Z" coordinates since these are potentially meaningful.
 
+How the code works - Perform the following steps to combine files for both test and training data
 
+Read.table used to read table of test data, X_test.txt
+
+Read.table used to read the test data, y_test.txt
+
+Read.table used to read the test data, subject_test.txt
+
+Create a dataframe naming columns "subject_id" and "activity" and the X test data.
+
+Read.table used to read the test data, features.txt file.
+
+Read.table used to read the test data, activity_labels.txt.
+
+Assign an activity label to the y variable.
+
+Use rbind to combine both test and training data into one dataframe.
+
+Load plyr to use grep function. grep finds letter/number patterns so they can be replaced or isolated. I created an index with only mean and std.
+
+Then I extracted just the data with only mean and std, subject_id, activity, and data from the entire data set.
+
+I renamed variables so they would be easy to read and omitted parenthses. Ex. tBodyAcc-mean()-X became Time Domain Signal-mean-X.
+
+I loaded reshape2 so I could place the variables, Time Domain Signal-mean-X, and mean in a column instead of a row for easy readability.
+
+I then wrote the file to a text file using write.table.
+
+See the file with comments in the code file. 
 
 
 
