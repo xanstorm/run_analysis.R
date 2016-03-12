@@ -75,4 +75,4 @@ head(data.melt)
 str(data.melt)
 data.tidy<-ddply(data.melt,.(subject_id, activity, variable),summarize, mean=mean(value)) # Computes mean of each var for subject and activity
 
-write.table(data.tidy,file="tidy_mean.txt", row.name = FALSE)
+write.table(data.tidy,file="tidy_mean.txt") # Write data to text file.
