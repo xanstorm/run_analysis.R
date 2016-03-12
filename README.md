@@ -73,13 +73,13 @@ Load plyr to use grep function. grep finds letter/number patterns so they can be
 
 Then I extracted just the data with only mean and std, subject_id, activity, and data from the entire data set.
 
-I renamed variables so they would be easy to read and omitted parenthses. Ex. tBodyAcc-mean()-X became Time Domain Signal-mean-X.
+I renamed variables so they would be easy to read and omitted parenthses. Ex. tBodyAcc-mean()-X became Time Domain Signal-BodyAcc-mean-X.
 
-I loaded reshape2 so I could place the variables, Time Domain Signal-mean-X, and mean in a column instead of a row for easy readability.
+I loaded reshape2 so I could place the variables, Time Domain Signal-mean-X, and mean in a column instead of a row for easy readability, using data.melt function.
 
-I then wrote the file to a text file using write.table.
+I then wrote the file to a text file using write.table to save and upload to gihub.
 
-See the file with comments in the code file. 
+See the file with comments in the code file for further explanation. 
 
 
 
