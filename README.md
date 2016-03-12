@@ -29,25 +29,25 @@ data files into a single data set, and then summarized them. Below is a sample o
 
 subject_id     activity             variable                       mean
 
-1           1  WALKING    Time Domain Signal of BodyAcc-mean-X  0.27733076
+1             WALKING    Time Domain Signal of BodyAcc-mean-X  0.27733076
 
-2           1  WALKING    Time Domain Signal of BodyAcc-mean-Y -0.01738382
+1             WALKING    Time Domain Signal of BodyAcc-mean-Y -0.01738382
 
-3           1  WALKING    Time Domain Signal of BodyAcc-mean-Z -0.11114810
+1             WALKING    Time Domain Signal of BodyAcc-mean-Z -0.11114810
 
-4           1  WALKING     Time Domain Signal of BodyAcc-std-X -0.28374026
+1             WALKING     Time Domain Signal of BodyAcc-std-X -0.28374026
 
-5           1  WALKING     Time Domain Signal of BodyAcc-std-Y  0.11446134
+1             WALKING     Time Domain Signal of BodyAcc-std-Y  0.11446134
 
-6           1  WALKING     Time Domain Signal of BodyAcc-std-Z -0.26002790
+1             WALKING     Time Domain Signal of BodyAcc-std-Z -0.26002790
 
-7           1  WALKING Time Domain Signal of GravityAcc-mean-X  0.93522320
+1             WALKING     Time Domain Signal of GravityAcc-mean-X  0.93522320
 
-8           1  WALKING Time Domain Signal of GravityAcc-mean-Y -0.28216502
+1             WALKING   Time Domain Signal of GravityAcc-mean-Y -0.28216502
 
-9           1  WALKING Time Domain Signal of GravityAcc-mean-Z -0.06810286
+1             WALKING   Time Domain Signal of GravityAcc-mean-Z -0.06810286
 
-10          1  WALKING  Time Domain Signal of GravityAcc-std-X -0.97660964
+1             WALKING  Time Domain Signal of GravityAcc-std-X -0.97660964
 
 In the features.txt file, the file lists 561 variables with names such as "tBodyAcc-mean()-X" or "fBodyAcc-mean()-X." I replaced this terminology, t or f, with the words, "Time Domain Signal" for "t"and "Fast Fourier Transform" for "f" for better readability. I left the "X", "Y", and "Z" coordinates since these are potentially meaningful.
 
