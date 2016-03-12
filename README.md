@@ -27,7 +27,7 @@ y_test.txt is the number given to the activity name. Ex: 1. 1 correspesonds to w
 The analysis I performed took the data files, comprised of the raw data, user ID's, and activities, combined both test and training 
 data files into a single data set, and then summarized them. Below is a sample of the first ten rows of data. 
 
-subject_id activity                                variable        mean
+subject_id     activity             variable                       mean
 
 1           1  WALKING    Time Domain Signal of BodyAcc-mean-X  0.27733076
 
