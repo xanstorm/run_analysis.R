@@ -9,21 +9,32 @@ I presented only the mean and standarard deviation of the X, Y, and Z components
 
 The analysis I performed took the data files, comprised of the raw data, user ID's, and activities, combined both test and training 
 data files into a single data set, and then summarized them. Below is a sample of the first ten rows of data. 
+
 subject_id activity                                variable        mean
+
 1           1  WALKING    Time Domain Signal of BodyAcc-mean-X  0.27733076
+
 2           1  WALKING    Time Domain Signal of BodyAcc-mean-Y -0.01738382
+
 3           1  WALKING    Time Domain Signal of BodyAcc-mean-Z -0.11114810
+
 4           1  WALKING     Time Domain Signal of BodyAcc-std-X -0.28374026
+
 5           1  WALKING     Time Domain Signal of BodyAcc-std-Y  0.11446134
+
 6           1  WALKING     Time Domain Signal of BodyAcc-std-Z -0.26002790
+
 7           1  WALKING Time Domain Signal of GravityAcc-mean-X  0.93522320
+
 8           1  WALKING Time Domain Signal of GravityAcc-mean-Y -0.28216502
+
 9           1  WALKING Time Domain Signal of GravityAcc-mean-Z -0.06810286
+
 10          1  WALKING  Time Domain Signal of GravityAcc-std-X -0.97660964
 
 In the features.txt file, the file list 561 variables with names such as "tBodyAcc-mean()-X" or "fBodyAcc-mean()-X." I replaced this terminology, t or f, with the words, "Time Domain Signal" for "t"and "Fast Fourier Transform" for "f" for better readability. I left the "X", "Y", and "Z" coordinates since these are potentially meaningful.
 
-#1 Merges the training and the test sets to create one data set.
+1 Merges the training and the test sets to create one data set.
 test <- read.table("./test/X_test.txt",header= FALSE, nrow=5)
 test
 test <- read.table("./test/X_test.txt",header= FALSE) # Read and look at the test data
@@ -52,9 +63,9 @@ str(activity.label)
 activity <- as.character(activity.label[,2]) # Make labels characters
 test.new$activity <- factor(test.new$activity, levels=1:6, labels=activity) #changes lables 1-6 to names of activity
 
-# Training data - We changed the training data set just like we changed the test data set. 
-# Create data frame composed of data with column names and activites (walking) changed from numbers (1-6).
-# We are making the training file so that the columns are subject_id, activity (walking), and 561 columns of features 
+ Training data - I changed the training data set just like we changed the test data set: subject_id, activities, variables 
+ Create data frame composed of data with column names and activites (walking) changed from numbers (1-6).
+ We are making the training file so that the columns are subject_id, activity (walking), and 561 columns of features 
 setwd("/Users/stephenhobbs1/Desktop/UCI HAR Dataset")
 train <- read.table("./train/X_train.txt",header= FALSE, nrow=5) # Read in 1st 5 rows of data, nrow=5
 train # Looks at 1st 5 rows of data
@@ -77,7 +88,7 @@ data.comb <-rbind(test.new,train.new) # Combines both test and training data int
 ?grep
 library(plyr)
 library(reshape2)
-#2 - extract dataset with measurements like mean and std
+2 - extract dataset with measurements like mean and std
 col.names <- colnames(data.comb)
 index <- grep(pattern="[Mm]ean|[Ss]td", x=col.names) #Looks for pattern Mean or mean and Std or std in columns
 index
@@ -85,7 +96,7 @@ col.names[index]
 
 data.extract<-data.comb[,c(1,2,index)]
 str(data.extract)
-#4 Change column names to something easily human readable
+4 Change column names to something easily human readable
 col.names <- colnames(data.extract)
 col.names<-sub(pattern ="^t", replacement="Time Domain Signal of ", x=col.names) #Part of plyr pkg. Replace t with "Time Domain Signal ". Note the space character between Signal and ".
 col.names<-sub(pattern="^f", replacement = "Fast Fourier Transform ", x=col.names) #Replace f with "Fast Fourier Transform ". Note the space character between Transform and ".
@@ -94,7 +105,7 @@ col.names<-sub(pattern="\\)", replacement ="", x=col.names) #Removes right paren
 col.names<-sub(pattern= "^angle", replacement = "Angle of ", x=col.names) # Replace"angle" with "Angle of".
 col.names
 colnames(data.extract) <- col.names
-#5 Second tidy data set of mean
+5 Second tidy data set of mean
 data.melt<-melt(data.extract, id.vars = c("subject_id","activity")) #Part of reshape2 pkg.Swaps variables and values columns/rows. See http://www.statmethods.net/management/reshape.html
 head(data.melt)
 str(data.melt)
