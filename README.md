@@ -42,8 +42,7 @@ test
 head(test); str(test); dim(test) #Checking data structure and dimensions
 test.label <- read.table("./test/y_test.txt", nrow=5)
 test.label
-test.label <- read.table("./test/y_test.txt", header=FALSE) # Reading table and looking at the y coordinate test data - numbers associated
-#standing, walking up and down stairs, etc.
+test.label <- read.table("./test/y_test.txt", header=FALSE) # Reading table and looking at the y coordinate test data - numbers associated with standing, walking up and down stairs, etc.
 head(test.label); str(test.label); dim(test.label) # Looking at data and dimensions 
 
 test.subject <- read.table("./test/subject_test.txt", header = FALSE) # Reading table of participants, their id's.
