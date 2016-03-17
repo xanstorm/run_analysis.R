@@ -1,0 +1,86 @@
+Time Domain Signal of BodyAcc-mean-X
+ Time Domain Signal of BodyAcc-mean-Y
+ Time Domain Signal of BodyAcc-mean-Z
+ Time Domain Signal of BodyAcc-std-X
+ Time Domain Signal of BodyAcc-std-Y
+ Time Domain Signal of BodyAcc-std-Z
+ Time Domain Signal of GravityAcc-mean-X
+ Time Domain Signal of GravityAcc-mean-Y
+ Time Domain Signal of GravityAcc-mean-Z
+ Time Domain Signal of GravityAcc-std-X
+ Time Domain Signal of GravityAcc-std-Y
+ Time Domain Signal of GravityAcc-std-Z
+ Time Domain Signal of BodyAccJerk-mean-X
+ Time Domain Signal of BodyAccJerk-mean-Y
+ Time Domain Signal of BodyAccJerk-mean-Z
+ Time Domain Signal of BodyAccJerk-std-X
+ Time Domain Signal of BodyAccJerk-std-Y
+ Time Domain Signal of BodyAccJerk-std-Z
+ Time Domain Signal of BodyGyro-mean-X
+ Time Domain Signal of BodyGyro-mean-Y
+ Time Domain Signal of BodyGyro-mean-Z
+ Time Domain Signal of BodyGyro-std-X
+ Time Domain Signal of BodyGyro-std-Y
+ Time Domain Signal of BodyGyro-std-Z
+ Time Domain Signal of BodyGyroJerk-mean-X
+ Time Domain Signal of BodyGyroJerk-mean-Y
+ Time Domain Signal of BodyGyroJerk-mean-Z
+ Time Domain Signal of BodyGyroJerk-std-X
+ Time Domain Signal of BodyGyroJerk-std-Y
+ Time Domain Signal of BodyGyroJerk-std-Z
+ Time Domain Signal of BodyAccMag-mean
+ Time Domain Signal of BodyAccMag-std
+ Time Domain Signal of GravityAccMag-mean
+ Time Domain Signal of GravityAccMag-std
+ Time Domain Signal of BodyAccJerkMag-mean
+ Time Domain Signal of BodyAccJerkMag-std
+ Time Domain Signal of BodyGyroMag-mean
+ Time Domain Signal of BodyGyroMag-std
+ Time Domain Signal of BodyGyroJerkMag-mean
+ Time Domain Signal of BodyGyroJerkMag-std
+ Fast Fourier Transform BodyAcc-mean-X
+ Fast Fourier Transform BodyAcc-mean-Y
+ Fast Fourier Transform BodyAcc-mean-Z
+ Fast Fourier Transform BodyAcc-std-X
+ Fast Fourier Transform BodyAcc-std-Y
+ Fast Fourier Transform BodyAcc-std-Z
+ Fast Fourier Transform BodyAcc-meanFreq-X
+ Fast Fourier Transform BodyAcc-meanFreq-Y
+ Fast Fourier Transform BodyAcc-meanFreq-Z
+ Fast Fourier Transform BodyAccJerk-mean-X
+ Fast Fourier Transform BodyAccJerk-mean-Y
+ Fast Fourier Transform BodyAccJerk-mean-Z
+ Fast Fourier Transform BodyAccJerk-std-X
+ Fast Fourier Transform BodyAccJerk-std-Y
+ Fast Fourier Transform BodyAccJerk-std-Z
+ Fast Fourier Transform BodyAccJerk-meanFreq-X
+ Fast Fourier Transform BodyAccJerk-meanFreq-Y
+ Fast Fourier Transform BodyAccJerk-meanFreq-Z
+ Fast Fourier Transform BodyGyro-mean-X
+ Fast Fourier Transform BodyGyro-mean-Y
+ Fast Fourier Transform BodyGyro-mean-Z
+ Fast Fourier Transform BodyGyro-std-X
+ Fast Fourier Transform BodyGyro-std-Y
+ Fast Fourier Transform BodyGyro-std-Z
+ Fast Fourier Transform BodyGyro-meanFreq-X
+ Fast Fourier Transform BodyGyro-meanFreq-Y
+ Fast Fourier Transform BodyGyro-meanFreq-Z
+ Fast Fourier Transform BodyAccMag-mean
+ Fast Fourier Transform BodyAccMag-std
+ Fast Fourier Transform BodyAccMag-meanFreq
+ Fast Fourier Transform BodyBodyAccJerkMag-mean
+ Fast Fourier Transform BodyBodyAccJerkMag-std
+ Fast Fourier Transform BodyBodyAccJerkMag-meanFreq
+ Fast Fourier Transform BodyBodyGyroMag-mean
+ Fast Fourier Transform BodyBodyGyroMag-std
+ Fast Fourier Transform BodyBodyGyroMag-meanFreq
+ Fast Fourier Transform BodyBodyGyroJerkMag-mean
+ Fast Fourier Transform BodyBodyGyroJerkMag-std
+ Fast Fourier Transform BodyBodyGyroJerkMag-meanFreq
+ Angle of tBodyAccMean,gravity
+ Angle of tBodyAccJerkMean,gravityMean
+ Angle of tBodyGyroMean,gravityMean
+ Angle of tBodyGyroJerkMean,gravityMean
+ Angle of X,gravityMean
+ Angle of Y,gravityMean
+ Angle of Z,gravityMean
